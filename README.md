@@ -26,3 +26,30 @@ networksetup -setairportnetwork en0 <SSID_OF_NETWORK> <PASSWORD>
 ```
 sudo lsof -i -n -P | grep TCP
 ```
+
+## Various hash algorithms checks
+### SHA1
+```
+shasum /path/to/file
+```
+### SHA256
+```
+shasum -a 256 /path/to/file
+```
+```
+openssl sha256 /path/to/file
+```
+### SHA512
+```
+shasum -a 512 /path/to/file
+```
+```
+openssl sha512 /path/to/file
+```
+### MD5
+```
+md5 /path/to/file
+```
+```
+openssl md5 /path/to/file
+```
