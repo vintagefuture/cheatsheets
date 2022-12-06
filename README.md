@@ -26,6 +26,7 @@ networksetup -setairportnetwork en0 <SSID_OF_NETWORK> <PASSWORD>
 ```
 sudo lsof -i -n -P | grep TCP
 ```
+(in Linux you could use also `sudo ss -tulpn | grep :443` or `sudo netstat -tulpn | grep :443`)
 
 ## Various hash algorithms checks
 ### SHA1
