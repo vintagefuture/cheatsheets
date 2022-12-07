@@ -48,3 +48,7 @@
 :set number! relativenumber!
 :set nu! rnu!
 ```
+## Force save as sudo
+```
+:w !sudo tee %
+```
