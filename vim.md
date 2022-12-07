@@ -3,7 +3,7 @@
 :set list
 :set nolist
 ```
-### Turn relative line numbers on
+## Turn relative line numbers on
 ```
 :set relativenumber
 :set rnu
