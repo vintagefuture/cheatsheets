@@ -33,3 +33,18 @@
 :set number!
 :set nu!
 ```
+## Turn hybrid line numbers on
+```
+:set number relativenumber
+:set nu rnu
+```
+## Turn hybrid line numbers off
+```
+:set nonumber norelativenumber
+:set nonu nornu
+```
+## Toggle hybrid line numbers
+```
+:set number! relativenumber!
+:set nu! rnu!
+```
