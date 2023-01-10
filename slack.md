@@ -14,3 +14,5 @@ payload = {
 }
 requests.post(webhook_url, data=json.dumps(payload))
 ```
+
+Source: https://levelup.gitconnected.com/write-your-own-tools-python-slack-webhook-crontab-b549dd7b85e
