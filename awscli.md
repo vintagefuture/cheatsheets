@@ -8,3 +8,5 @@ aws --profile personal cloudformation list-stacks | jq '.StackSummaries[].StackN
 ```
 aws --profile personal cloudformation list-stacks --stack-status-filter CREATE_COMPLETE UPDATE_COMPLETE | jq '.StackSummaries[].StackName'
 ```
+
+Source: https://awstip.com/processing-aws-cli-output-with-jq-and-yq-fa5f243e549b
