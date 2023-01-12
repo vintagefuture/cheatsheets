@@ -49,3 +49,8 @@ git rebase -i HEAD~5
 ```
 git push --force origin HEAD
 ```
+
+**Show the logs in single lines**
+```
+git log --pretty=oneline
+```
