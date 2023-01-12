@@ -49,6 +49,7 @@ git rebase -i HEAD~5
 ```
 git push --force origin HEAD
 ```
+Source: https://www.internalpointers.com/post/squash-commits-into-one-git
 
 **Show the logs in single lines**
 ```
