@@ -59,4 +59,6 @@ openssl md5 /path/to/file
 ```
  defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
+Then reboot.
+
 Source: https://www.techrepublic.com/article/how-to-disable-the-creation-of-dsstore-files-for-mac-users-folders/
