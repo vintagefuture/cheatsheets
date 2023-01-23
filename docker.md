@@ -4,19 +4,45 @@
 
 ### Server 
 
+### On Linux
+
 edit the Docker service file:
 
-```
+```bash
 sudo vim /usr/lib/systemd/system/docker.service
 ```
 Add the following under the Service section:
-```
+```bash
 ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
 ```
 Then reload everything:
-```
+```bash
 sudo systemctl daemon-reload
 sudo systemctl restart docker.service
+```
+
+### On Windows
+
+Edit the file `C:\ProgramData\docker\config\daemon.json` adding the following:
+
+```json
+{
+  "hosts": [
+    "tcp://0.0.0.0:2375",
+    "npipe:////./pipe/docker_engine_windows"
+  ]
+}
+```
+
+Restart the service in Powershell:
+
+```powershell
+Restart-Service docker
+```
+Confirm the endpoint is reachable externally:
+
+```powershell
+docker -H tcp://0.0.0.0:2375 ps
 ```
 
 ### Client
