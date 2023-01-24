@@ -59,6 +59,10 @@ Change the Docker environment varible:
 export DOCKER_HOST=<SERVER ADDRESS>
 ```
 
+Or simply use `docker context`:
+
+https://docs.docker.com/engine/context/working-with-contexts/
+
 ## Run an image with a different architecture
 
 ```
