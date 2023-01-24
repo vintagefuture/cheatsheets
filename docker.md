@@ -23,7 +23,7 @@ sudo systemctl restart docker.service
 
 ### On Windows
 
-Edit the file `C:\ProgramData\docker\config\daemon.json` adding the following:
+If no Docker Desktop is installed, edit the file `C:\ProgramData\docker\config\daemon.json` adding the following:
 
 ```json
 {
@@ -44,6 +44,14 @@ Confirm the endpoint is reachable externally:
 ```powershell
 docker -H tcp://0.0.0.0:2375 ps
 ```
+
+If Docker Desktop *is* installed though, use the checkbox in the Docker Desktop GUI and then run from elevated prompt:
+
+```
+netsh interface portproxy add v4tov4 listenport=2375 listenaddress=<your_IP> connectaddress=127.0.0.1 connectport=2375
+```
+
+Source: https://www.ibm.com/docs/en/addi/6.1.0?topic=prerequisites-configuring-docker-engine-listen-tcp-socket
 
 ### Client
 Change the Docker environment varible:
