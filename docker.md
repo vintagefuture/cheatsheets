@@ -105,3 +105,9 @@ sudo apt-get update
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
+
+## Install Docker Desktop on Windows
+To set Windows containers as defautl, use:
+```
+start /w "" "Docker Desktop Installer.exe" install --backend=windows
+```
