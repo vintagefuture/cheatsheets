@@ -14,3 +14,12 @@ Note
 **Step 6** Enter the current password to confirm changes and click OK
 
 Source: https://www.ionos.co.uk/digitalguide/server/configuration/windows-11-automatic-login/
+
+## Activate virtualization
+
+Start Windows Powershell as Administrator and run these commands to activate the feautres.
+
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName containers –All
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
+```
