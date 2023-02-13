@@ -51,7 +51,28 @@ If Docker Desktop *is* installed though, use the checkbox in the Docker Desktop 
 netsh interface portproxy add v4tov4 listenport=2375 connectaddress=127.0.0.1 connectport=2375
 ```
 
+and restart the Docker service:
+
+```
+net stop docker && net start docker
+```
+
 Source: https://www.ibm.com/docs/en/addi/6.1.0?topic=prerequisites-configuring-docker-engine-listen-tcp-socket
+
+Various troubleshooting commands for the above:
+
+
+```
+netstat -ano | findstr :2375
+```
+
+```
+netsh interface portproxy show v4tov4
+```
+
+```
+netsh interface portproxy delete v4tov4 listenaddress=192.168.0.237 listenport=2375
+```
 
 ### Client
 Change the Docker environment varible:
