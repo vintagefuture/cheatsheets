@@ -22,3 +22,9 @@ output_date1="$(echo $h $m $s $ms)"
 
 echo $output_date1
 ```
+
+## Watch a specific process
+
+```
+watch 'ps -o command | grep ^curl'
+```
