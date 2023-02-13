@@ -9,7 +9,7 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 
 ## Check if port is open on a remote server
 ```
-nc -vz SERVER PORT
+nc -vz $SERVER $PORT
 ```
 
 ## To List all available WIFI networks, Run:
