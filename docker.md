@@ -48,7 +48,7 @@ docker -H tcp://0.0.0.0:2375 ps
 If Docker Desktop *is* installed though, use the checkbox in the Docker Desktop GUI and then run from elevated prompt:
 
 ```
-netsh interface portproxy add v4tov4 listenport=2375 listenaddress=0.0.0.0 connectaddress=127.0.0.1 connectport=2375
+netsh interface portproxy add v4tov4 listenport=2375 listenaddress=192.168.0.95 connectaddress=127.0.0.1 connectport=2375
 ```
 
 and restart the Docker service:
