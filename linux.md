@@ -14,3 +14,9 @@ curl icanhazip.com
 curl ipecho.net/plain
 curl ifconfig.co
 ```
+
+## Port forwarding
+```
+sysctl -w net.ipv4.ip_forward=1
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 2375 -j DNAT --to-destination 127.0.0.1:2375
+```
