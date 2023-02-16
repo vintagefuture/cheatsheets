@@ -44,6 +44,11 @@ Confirm the endpoint is reachable externally:
 ```powershell
 docker -H tcp://0.0.0.0:2375 ps
 ```
+Allow the connection from the firewall:
+
+```powershell
+New-NetFirewallRule -DisplayName "Docker Engine" -Direction Inbound -LocalPort 2375 -Protocol TCP -Action Allow
+```
 
 If Docker Desktop *is* installed though, use the checkbox in the Docker Desktop GUI and then run from elevated prompt:
 
