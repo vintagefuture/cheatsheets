@@ -55,3 +55,9 @@ Source: https://www.internalpointers.com/post/squash-commits-into-one-git
 ```
 git log --pretty=oneline
 ```
+
+**Remove all local changes**
+```
+git reset –hard
+git clean -fxd
+```
