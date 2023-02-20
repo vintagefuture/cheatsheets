@@ -133,7 +133,17 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
 ## Install Docker Desktop on Windows
-To set Windows containers as defautl, use:
+To set Hyper-V backend during install, use:
 ```
 start /w "" "Docker Desktop Installer.exe" install --backend=windows
+```
+
+To switch between linux and windows containers, use:
+```
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon
+```
+also you can use:
+```
+‘c:\Program Files\Docker\Docker\dockercli.exe’ -SwitchWindowsEngine
+‘c:\Program Files\Docker\Docker\dockercli.exe’ -SwitchLinuxEngine
 ```
