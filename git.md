@@ -61,3 +61,12 @@ git log --pretty=oneline
 git reset –hard
 git clean -fxd
 ```
+
+**Show abbreviated git log**
+```
+git log --oneline
+```
+which is actaully a shorthand for:
+```
+git log --pretty=oneline --abbrev-commit
+```
