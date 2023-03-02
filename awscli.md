@@ -10,3 +10,8 @@ aws --profile personal cloudformation list-stacks --stack-status-filter CREATE_C
 ```
 
 Source: https://awstip.com/processing-aws-cli-output-with-jq-and-yq-fa5f243e549b
+
+## List exported value for a resource
+```
+aws cloudformation list-exports --query "Exports [?Name=='myexportname'].Value" --no-paginate --output text
+```
