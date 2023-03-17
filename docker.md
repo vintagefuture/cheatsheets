@@ -2,7 +2,7 @@
 
 ## Quickly test a Dockerfile
 ```
-docker run --rm -it $(docker build -q .)
+docker run --rm $(docker build -q .)
 ```
 
 ## How to enable connecting to docker daemon remotely
