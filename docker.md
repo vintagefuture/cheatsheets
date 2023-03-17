@@ -1,5 +1,10 @@
 # Docker cheatsheet
 
+## Quickly test a Dockerfile
+```
+docker run --rm -it $(docker build -q .)
+```
+
 ## How to enable connecting to docker daemon remotely
 
 ### Server 
