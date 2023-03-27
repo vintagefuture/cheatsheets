@@ -137,6 +137,11 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
+### Install Docker Engine on Windows Server
+```
+https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce#windows-server-1
+```
+
 ## Install Docker Desktop on Windows
 To set Hyper-V backend during install, use:
 ```
