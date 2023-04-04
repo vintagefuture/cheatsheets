@@ -28,3 +28,8 @@ echo $output_date1
 ```
 watch 'ps -o command | grep ^curl'
 ```
+
+## Replace a pattern between patterns
+```
+sed -i '/pattern1/, /pattern2/' s/true/false' config.xml
+```
