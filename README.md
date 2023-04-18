@@ -1,3 +1,3 @@
 # cheatsheets
 
-Collection of useful commands I can never remember!
+A collection of useful commands I can never remember!
