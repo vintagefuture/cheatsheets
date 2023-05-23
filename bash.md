@@ -33,3 +33,8 @@ watch 'ps -o command | grep ^curl'
 ```
 sed -i '/pattern1/, /pattern2/' s/true/false' config.xml
 ```
+## Get current directory or folder name (without the full path)
+
+```
+echo "${PWD##*/}"
+```
