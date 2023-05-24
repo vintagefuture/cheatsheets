@@ -23,3 +23,9 @@ Start Windows Powershell as Administrator and run these commands to activate the
 Enable-WindowsOptionalFeature -Online -FeatureName containers –All
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
 ```
+
+## List Firewall Rules
+
+```powershell
+Get-NetFirewallRule | Select-Object DisplayName, Enabled, Direction, Action
+```
