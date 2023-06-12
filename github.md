@@ -8,7 +8,8 @@ https://github.com/:owner/:repo/releases.atom
 
 https://github.com/:owner/:repo/commits.atom
 
-## Private feed (You can find Subscribe to your news feed in dashboard page after login)
+## Private feed
+#### (You can find Subscribe to your news feed in dashboard page after login)
 
 https://github.com/:user.private.atom?token=:secret
 
