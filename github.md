@@ -1,21 +1,21 @@
-# Useful RSS links
+# Useful GitHub RSS links
 
-/* Repo releases */
+## Repo releases
 
 https://github.com/:owner/:repo/releases.atom
 
-/* Repo commits */
+## Repo commits
 
 https://github.com/:owner/:repo/commits.atom
 
-/* Private feed (You can find Subscribe to your news feed in dashboard page after login) */
+## Private feed (You can find Subscribe to your news feed in dashboard page after login)
 
 https://github.com/:user.private.atom?token=:secret
 
-/* Repo tags */
+## Repo tags
 
 https://github.com/:user/:repo/tags.atom
 
-/* User activity */
+## User activity
 
 https://github.com/:user.atom
