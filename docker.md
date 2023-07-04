@@ -7,7 +7,7 @@ docker run --rm $(docker build -q .)
 
 ## How to enable connecting to docker daemon remotely
 
-### Server 
+## Server 
 
 ### On Linux
 
@@ -25,7 +25,13 @@ Then reload everything:
 sudo systemctl daemon-reload
 sudo systemctl restart docker.service
 ```
-
+### On macOS
+```bash
+docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 127.0.0.1:1234:1234 bobrik/socat TCP-LISTEN:1234,fork UNIX-CONNECT:/var/run/docker.sock
+```
+```bash
+export DOCKER_HOST=tcp://localhost:1234
+```
 ### On Windows
 
 If no Docker Desktop is installed, edit the file `C:\ProgramData\docker\config\daemon.json` adding the following:
@@ -84,7 +90,7 @@ netsh interface portproxy show v4tov4
 netsh interface portproxy delete v4tov4 listenaddress=192.168.0.237 listenport=2375
 ```
 
-### Client
+## Client
 Change the Docker environment varible:
 ```
 export DOCKER_HOST=<SERVER ADDRESS>
