@@ -27,10 +27,10 @@ sudo systemctl restart docker.service
 ```
 ### On macOS
 ```bash
-docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 127.0.0.1:1234:1234 bobrik/socat TCP-LISTEN:1234,fork UNIX-CONNECT:/var/run/docker.sock
+docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 127.0.0.1:2375:2375 bobrik/socat TCP-LISTEN:2375,fork UNIX-CONNECT:/var/run/docker.sock
 ```
 ```bash
-export DOCKER_HOST=tcp://localhost:1234
+export DOCKER_HOST=tcp://localhost:2375
 ```
 ### On Windows
 
