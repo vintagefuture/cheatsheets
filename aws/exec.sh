@@ -7,6 +7,13 @@ export REGION=
 export STATUS=
 export CONTAINER_NAME=
 
+# aws ecs update-service \
+#     --profile $PROFILE \
+#     --cluster $CLUSTER \
+#     --desired-count 1 \
+#     --service $SERVICE \
+#     --enable-execute-command \
+#     --force-new-deployment
 
 task_id=$(aws ecs list-tasks \
             --profile $PROFILE \
