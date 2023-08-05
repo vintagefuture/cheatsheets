@@ -62,3 +62,10 @@ openssl md5 /path/to/file
 Then reboot.
 
 Source: https://www.techrepublic.com/article/how-to-disable-the-creation-of-dsstore-files-for-mac-users-folders/
+
+
+#### Start TextEdit with new document
+
+```bash
+defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
+```
