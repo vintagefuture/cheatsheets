@@ -8,6 +8,7 @@ sudo killall -HUP <service>
 
 ## Check your public IP address
 ```
+curl ipinfo.io
 curl checkip.amazonaws.com
 curl ifconfig.me
 curl icanhazip.com
