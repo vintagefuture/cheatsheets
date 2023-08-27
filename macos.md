@@ -69,3 +69,9 @@ Source: https://www.techrepublic.com/article/how-to-disable-the-creation-of-dsst
 ```bash
 defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
 ```
+
+### Retrieve files from iBooks
+
+```bash
+cd ~/Library/Mobile\ Documents/iCloud~com~apple~iBooks/Documents/
+```
