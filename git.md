@@ -65,3 +65,12 @@ which is actaully a shorthand for:
 ```
 git log --pretty=oneline --abbrev-commit
 ```
+**Amend the date**
+```
+GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"
+```
+
+**Amend the author**
+```
+git commit --amend --author="Author Name <email@address.com>"
+```
