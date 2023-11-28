@@ -55,7 +55,7 @@ md5 /path/to/file
 openssl md5 /path/to/file
 ```
 
-### Disable creationg of .DS_Store files
+### Disable creationg of .DS_Store files for network drives
 ```
  defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
