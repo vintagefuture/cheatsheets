@@ -75,3 +75,9 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 ```bash
 cd ~/Library/Mobile\ Documents/iCloud~com~apple~iBooks/Documents/
 ```
+
+### Send text to the clipboard
+
+```bash
+cat textfile-to-copy | pbcopy
+```
