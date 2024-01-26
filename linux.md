@@ -32,3 +32,5 @@ iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 2375 -j DNAT --to-destinati
 ## Mac-like copy/paste
 
 Firefox: about:config -> ui.key.accelkey -> set to 91
+
+dconfg -> search for overalay-key -> set to empty string
