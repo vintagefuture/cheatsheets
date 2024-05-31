@@ -81,3 +81,8 @@ cd ~/Library/Mobile\ Documents/iCloud~com~apple~iBooks/Documents/
 ```bash
 cat textfile-to-copy | pbcopy
 ```
+
+### Replace Docker Desktop for Mac
+
+https://dev.to/elliotalexander/how-to-use-docker-without-docker-desktop-on-macos-217m
+https://smallsharpsoftwaretools.com/tutorials/use-colima-to-run-docker-containers-on-macos/
