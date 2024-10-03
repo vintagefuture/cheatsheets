@@ -74,3 +74,14 @@ GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"
 ```
 git commit --amend --author="Author Name <email@address.com>"
 ```
+
+**Grab a file from a different branch**
+```
+git checkout <branch> -- <filename>
+```
+
+or 
+
+```
+git checkout <sha> <path-to-file>
+```
