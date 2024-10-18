@@ -86,3 +86,29 @@ cat textfile-to-copy | pbcopy
 
 https://dev.to/elliotalexander/how-to-use-docker-without-docker-desktop-on-macos-217m
 https://smallsharpsoftwaretools.com/tutorials/use-colima-to-run-docker-containers-on-macos/
+
+### Completely reset Safari
+
+```bash
+mv ~/Library/Safari ~/Desktop/Safari-`date +%Y%m%d%H%M%S`;
+rm -Rf ~/Library/Cache/*;
+rm -Rf ~/Library/Caches/Apple\ -\ Safari\ -\ Safari\ Extensions\ Gallery;
+rm -Rf ~/Library/Caches/Metadata/Safari;
+rm -Rf ~/Library/Caches/com.apple.Safari;
+rm -Rf ~/Library/Caches/com.apple.WebKit.PluginProcess;
+rm -Rf ~/Library/Cookies/*;
+rm -Rf ~/Library/Cookies/Cookies.binarycookies;
+rm -Rf ~/Library/Preferences/Apple\ -\ Safari\ -\ Safari\ Extensions\ Gallery;
+rm -Rf ~/Library/Preferences/com.apple.Safari.LSSharedFileList.plist;
+rm -Rf ~/Library/Preferences/com.apple.Safari.RSS.plist;
+rm -Rf ~/Library/Preferences/com.apple.Safari.plist;
+rm -Rf ~/Library/Preferences/com.apple.WebFoundation.plist;
+rm -Rf ~/Library/Preferences/com.apple.WebKit.PluginHost.plist;
+rm -Rf ~/Library/Preferences/com.apple.WebKit.PluginProcess.plist;
+rm -Rf ~/Library/PubSub/Database;
+rm -Rf ~/Library/Safari/*;
+rm -Rf ~/Library/Safari/Bookmarks.plist;
+rm -Rf ~/Library/Saved\ Application\ State/com.apple.Safari.savedState;
+```
+
+Source: https://www.makeuseof.com/reset-safari-default-mac/
