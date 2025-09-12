@@ -85,3 +85,13 @@ or
 ```
 git checkout <sha> <path-to-file>
 ```
+**Remove all files that are ignored (good to go back to a clean slate)**
+```
+git clean -dfX
+```
+
+`git-clean` - Remove untracked files from the working tree
+- `-d` Remove directories
+- `-f` Remove forcefully
+- `-n` Don’t actually remove anything, just show what would be done.
+- `-X` Remove only files ignored by Git. This may be useful to rebuild everything from scratch, but keep manually created files.
