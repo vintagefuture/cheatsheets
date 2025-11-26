@@ -95,3 +95,15 @@ git clean -dfX
 - `-f` Remove forcefully
 - `-n` Don’t actually remove anything, just show what would be done.
 - `-X` Remove only files ignored by Git. This may be useful to rebuild everything from scratch, but keep manually created files.
+
+**Quick squash of several commits**
+
+```
+git reset --soft 36ede7af0
+```
+
+where `36ede7af0` is the hash of the commit message you want to keep
+
+```
+git commit --amend
+```
