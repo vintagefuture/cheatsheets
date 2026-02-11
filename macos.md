@@ -112,3 +112,9 @@ rm -Rf ~/Library/Saved\ Application\ State/com.apple.Safari.savedState;
 ```
 
 Source: https://www.makeuseof.com/reset-safari-default-mac/
+
+### Remove delay for showing dock
+
+```
+defaults write com.apple.dock autohide-delay -float 0; killall Dock
+```
